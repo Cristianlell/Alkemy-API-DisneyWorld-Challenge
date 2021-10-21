@@ -1,0 +1,156 @@
+## Registro
+POST http://localhost:3000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "cristianlell23@gmail.com",
+    "password": "pas123"
+}
+
+###
+
+## Login
+POST http://localhost:3000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "cristianlell23@gmail.com",
+    "password": "pas123"
+}
+
+###
+
+
+## PERSONAJES
+GET http://localhost:3000/characters HTTP/1.1
+content-type: application/json
+###
+## Buscar por nombre en orden desc
+GET http://localhost:3000/characters?name=a&order=desc HTTP/1.1
+content-type: application/json
+###
+
+## Filtrar por edad
+GET http://localhost:3000/characters?age=36 HTTP/1.1
+content-type: application/json
+###
+
+## Ordenar ASC | DESC
+GET http://localhost:3000/characters?order=desc HTTP/1.1
+content-type: application/json
+###
+
+## Filtrar por peso
+GET http://localhost:3000/characters?weight=118 HTTP/1.1
+content-type: application/json
+###
+
+###
+# Detalle de Character
+GET http://localhost:3000/characters/detail/4 HTTP/1.1
+content-type: application/json
+
+###
+# Crear Character
+POST  http://localhost:3000/characters/create HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+
+{
+    "name":"Cristian",
+    "image":"ss.jpg",
+    "age":22,
+    "weight":140,
+    "history":""
+
+}
+###
+
+# Editar Character
+PUT  http://localhost:3000/characters/edit/5 HTTP/1.1
+content-type: application/json
+// Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+
+{
+    "name":"Cristian",
+    "image":"ss.jpg",
+    "age":22,
+    "weight":140,
+    "history":""
+
+}
+###
+
+# Eliminar Character
+DELETE   http://localhost:3000/characters/delete/5 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+
+
+###
+
+##  PELICULAS
+GET http://localhost:3000/movies HTTP/1.1
+content-type: application/json
+
+###
+## buscar por nombre en orden desc
+GET http://localhost:3000/movies?name=a&order=desc HTTP/1.1
+content-type: application/json
+###
+
+## filtrar por edad
+GET http://localhost:3000/movies?age=36 HTTP/1.1
+content-type: application/json
+###
+
+## ordenar ASC | DESC
+GET http://localhost:3000/movies?order=desc HTTP/1.1
+content-type: application/json
+###
+
+## filtrar por peso
+GET http://localhost:3000/movies?weight=118 HTTP/1.1
+content-type: application/json
+###
+
+###
+#detail
+GET http://localhost:3000/movies/detail/4 HTTP/1.1
+content-type: application/json
+
+###
+# Crear Movie
+POST  http://localhost:3000/movies/create HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+
+{
+    "name":"Cristian",
+    "image":"ss.jpg",
+    "age":22,
+    "weight":140,
+    "history":""
+
+}
+###
+
+# Editar Movies
+PUT  http://localhost:3000/movies/edit/5 HTTP/1.1
+content-type: application/json
+// Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+
+{
+    "name":"Cristian",
+    "image":"ss.jpg",
+    "age":22,
+    "weight":140,
+    "history":""
+
+}
+###
+
+# Eliminar Movies
+DELETE   http://localhost:3000/movies/delete/5 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs

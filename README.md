@@ -10,7 +10,7 @@
 <span><b>EN CASO DE ERROR O QUERER VOLVER ATRÁS, BORRAR MIGRACIONES CON: sequelize db:migrate:undo:all Y VOLVER A CORRERLAS CON: sequelize db:migrate y luego los seed con: db:seed:all</b> </span>
 
 ###
-***SINTAXÍS DE PLUGIN REST Client de VSC***
+***SINTAXÍS DE PLUGIN REST Client de VSC sin las etiquetas HTML***
 ## Registro
 POST http://localhost:3000/auth/register HTTP/1.1
 <p>content-type: application/json</p>
@@ -37,14 +37,14 @@ POST http://localhost:3000/auth/login HTTP/1.1
 ## PERSONAJES
 GET http://localhost:3000/characters HTTP/1.1
 <p>content-type: application/json</p>
- Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs 
+ <p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 
 ###
 ## Buscar por nombre en orden desc
 GET http://localhost:3000/characters?name=a&order=desc HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 ###
@@ -52,7 +52,7 @@ GET http://localhost:3000/characters?name=a&order=desc HTTP/1.1
 ## Filtrar por edad
 GET http://localhost:3000/characters?age=36 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 ###
@@ -60,27 +60,27 @@ GET http://localhost:3000/characters?age=36 HTTP/1.1
 ## Ordenar ASC | DESC
 GET http://localhost:3000/characters?order=desc HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 ###
 
 ## Filtrar por peso
 GET http://localhost:3000/characters?weight=118 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 ###
 
 ###
 ## Detalle de Character
 GET http://localhost:3000/characters/detail/2 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 ###
 ## Crear Character
 POST  http://localhost:3000/characters/create HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 {
     "name":"Thor",
@@ -95,7 +95,7 @@ POST  http://localhost:3000/characters/create HTTP/1.1
 ## Editar Character
 PUT  http://localhost:3000/characters/edit/6 HTTP/1.1
 <p>content-type: application/json</p>
-// Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 {
     "name":"Cristian",
@@ -110,35 +110,35 @@ PUT  http://localhost:3000/characters/edit/6 HTTP/1.1
 ## Eliminar Character
 DELETE   http://localhost:3000/characters/delete/6 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 
 ###
 ##  PELICULAS
 GET http://localhost:3000/movies HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 ###
 ## Buscar por título en orden desc
 GET http://localhost:3000/movies?title=k&order=desc HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 ###
 
 ## Filtrar por género [accion[id:1], animación[id:2], aventura[id:3], drama[id:4]]
 GET http://localhost:3000/movies?genre=1 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 ###
 
 ## Ordenar ASC | DESC
 GET http://localhost:3000/movies?order=asc HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 ###
 
@@ -146,7 +146,7 @@ GET http://localhost:3000/movies?order=asc HTTP/1.1
 ## Detail
 GET http://localhost:3000/movies/detail/7 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 
@@ -154,7 +154,7 @@ GET http://localhost:3000/movies/detail/7 HTTP/1.1
 ## Crear Movie formato de fecha YYYY/MM/DD
 POST  http://localhost:3000/movies/create HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 {
     "title":"Cristian",
@@ -168,7 +168,7 @@ POST  http://localhost:3000/movies/create HTTP/1.1
 ## Editar Movies formato de fecha YYYY/MM/DD
 PUT  http://localhost:3000/movies/edit/6 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 {
     "title":"Cristian",
@@ -183,7 +183,7 @@ PUT  http://localhost:3000/movies/edit/6 HTTP/1.1
 ## Eliminar Movies
 DELETE   http://localhost:3000/movies/delete/5 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization: "TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs</p>
 
 ###
 
@@ -193,7 +193,7 @@ DELETE   http://localhost:3000/movies/delete/5 HTTP/1.1
 
 POST  http://localhost:3000/relations/create HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 {
     "characterId":5,
@@ -208,7 +208,7 @@ POST  http://localhost:3000/relations/create HTTP/1.1
 
 PUT  http://localhost:3000/relations/edit/1 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 {
     "characterId":2,
@@ -221,7 +221,7 @@ PUT  http://localhost:3000/relations/edit/1 HTTP/1.1
 
 DELETE  http://localhost:3000/relations/delete/6 HTTP/1.1
 <p>content-type: application/json</p>
-//Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZWs
+<p>Authorization:"TOKEN EJEMPLO" Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjcmlzdGlhbmxlbGwyM0BnbWFpbC5jb20iLCJpYXQiOjE2MzQ2MDI2NTAsImV4cCI6MTYzNDYwMjk1MH0.3NKtW2gz-AE8HDfeG81Wmhs_vr6mp9FRhk8ux2BZZW</p>
 
 
 ###

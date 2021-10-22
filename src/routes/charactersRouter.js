@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const {list,detail,create,edit,destroy} = require('../controllers/characterController');
-const upload = require("../middlewares/multerCharacter");
+const upload = require("../middlewares/multerCharacters");
 const validCharacters = require('../validations/validCharacters');
 const updateCharacters = require('../validations/updateCharacters');
 

@@ -9,6 +9,7 @@ let authRouter = require('./routes/authRouter');
 let moviesRouter = require('./routes/moviesRouter');
 let authToken = require('./middlewares/authToken');
 let characterRouter = require('./routes/charactersRouter');
+let relationRouter = require('./routes/relationRouter');
 
 var app = express();
 
@@ -23,9 +24,10 @@ app.use(express.static(path.join(__dirname, 'images')));
 app.use('/auth', authRouter);
 
 // se requiere token
-// app.use(authToken);
+app.use(authToken);
 app.use('/characters', characterRouter);
 app.use('/movies', moviesRouter);
+app.use('/relations', relationRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

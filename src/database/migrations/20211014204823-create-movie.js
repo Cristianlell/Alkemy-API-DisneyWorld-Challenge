@@ -16,10 +16,6 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      description: {
-        allowNull: false,
-        type: Sequelize.STRING(700)
-      },
       releaseDate: {
         allowNull: false,
         type: Sequelize.DATE

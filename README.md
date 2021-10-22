@@ -3,11 +3,11 @@
 
 
 
-<p>Crear Schema <b>>disneyDB</b> corriendo el script createSchema</p>
+<p>Crear Schema <b>disneyDB</b> corriendo el script createSchema</p>
 <p>Correr las migraciones con: sequelize db:migrate</p>
 <p>Correr los seeders con: sequelize db:seed:all</p>
 
-<span><b>EN CASO DE ERROR O QUERER VOLVER ATRÁS, BORRAR MIGRACIONES CON: sequelize db:migrate:undo:all y volver a correrlas con sequelize db:migrate y luego los seed con: db:seed:all</b> </span>
+<span><b>EN CASO DE ERROR O QUERER VOLVER ATRÁS, BORRAR MIGRACIONES CON: sequelize db:migrate:undo:all Y VOLVER A CORRERLAS CON: sequelize db:migrate y luego los seed con: db:seed:all</b> </span>
 
 ## Registro
 POST http://localhost:3000/auth/register HTTP/1.1
